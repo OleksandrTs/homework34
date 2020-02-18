@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css ">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Maps</title> 
+</head>
+<body>
+    <div class="container">
+        <form action="" id="route">
+            <span class="text">Укажите пункт отправления</span>
+            <input class="input" type="text" id="start">
+            <span class="text">Укажите пункт назначения</span>
+            <input class="input" type="text" id="end">
+            <input type="button" value="Проложить маршрут" id="submit">
+        </form>
+        <div id="map"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMk5v6lQfZ-X9OnC4_5xt8EC9rSKv6OVY&callback=initMap"></script>
+</body>
+</html>
